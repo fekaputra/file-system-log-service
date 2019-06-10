@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/dist/vis.js"></script>
+    <script type="text/javascript" src="/dist/jquery.min.js"></script>
+    <link href="/dist/vis-network.min.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        #mynetwork {
+            height: 600px;
+            width: 1200px;
+            border: 1px solid lightgray;
+        }
+
+        p {
+            max-width: 1200px;
+        }
+
+        /*#edgeInfo {
+            height: 600px;
+            width: 300px;
+            border: 1px solid lightgray;
+        }*/
+
+        #edgeInfo {
+            height: 170px;
+            width: 1200px;
+            border: 1px solid lightgray;
+        }
+
+    </style>
+</head>
+<body>
+<div class="ui container">
+    <br>
+    <div id="search">
+        <div class="input-group mb-3">
+            <input type="text" id="pathname" class="form-control" placeholder="pathname" aria-label="pathname"
+                   aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                        onclick="sendIt()">Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Root -->
+    <div id="app"></div>
+
+    <!--<div class="container-fluid">
+         <div class="row" style=": center">
+             <div class="column">
+                 <div id="mynetwork"></div>
+             </div>
+             <div class="column">
+                 <div id="edgeInfo"></div>
+             </div>
+         </div>
+     </div>-->
+
+    <div class="container-fluid">
+        <div class="row" style=": center">
+            <div id="edgeInfo"></div>
+        </div>
+        <div class="row" style=": center">
+            <div id="mynetwork"></div>
+        </div>
+    </div>
+
+    <!-- <pre id="eventSpan"></pre>-->
+</div>
+
+<!-- JS Library Dependencies -->
+<script src="js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>

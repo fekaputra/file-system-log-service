@@ -1,0 +1,34 @@
+[
+  {
+    "time": {"type": "literal", "value": "2018-09-01T16:33:50.210Z"},
+    "filename": {"type": "literal","value": "C:\\Users\\Virtual Windows 10\\UserDocuments\\notepad++.txt"},
+    "fileAccess": {"type": "literal", "value": "created\/modified"},
+    "tfilename": {"type": "literal", "value": ""},
+    "program": {"type": "literal", "value": "C:\\Program Files (x86)\\Notepad++\\notepad++.exe"},
+    "user": {"type": "literal", "value": "Virtual Windows 10"}
+  },
+  {
+    "time": {"type": "literal", "value": "2018-09-01T16:34:30.950Z"},
+    "filename": {"type": "literal", "value": "C:\\Users\\Virtual Windows 10\\UserDocuments\\notepad++.txt"},
+    "fileAccess": {"type": "literal", "value": "renamed"},
+    "tfilename": {"type": "literal", "value": "C:\\Users\\Virtual Windows 10\\UserDocuments\\notepad++_rename.txt"},
+    "program": {"type": "literal", "value": "C:\\Windows\\explorer.exe"},
+    "user": {"type": "literal", "value": "Virtual Windows 10"}
+  },
+  {
+    "time": {"type": "literal", "value": "2018-09-01T16:35:02.593Z"},
+    "filename": {"type": "literal", "value": "C:\\Users\\Virtual Windows 10\\UserDocuments\\notepad++_rename.txt"},
+    "fileAccess": {"type": "literal", "value": "created\/modified"},
+    "tfilename": {"type": "literal", "value": ""},
+    "program": {"type": "literal", "value": "C:\\Windows\\System32\\notepad.exe"},
+    "user": {"type": "literal", "value": "Virtual Windows 10"}
+  },
+  {
+    "time": {"type": "literal", "value": "2018-09-01T16:35:10.691Z"},
+    "filename": {"type": "literal", "value": "C:\\Users\\Virtual Windows 10\\Dropbox\\notepad++_rename.txt:com.dropbox.attributes"},
+    "fileAccess": {"type": "literal", "value": "create\/modified"},
+    "tfilename": {"type": "literal", "value": ""},
+    "program": {"type": "literal", "value": "C:\\Program Files (x86)\\Dropbox\\Client\\Dropbox.exe"},
+    "user": {"type": "literal", "value": "Virtual Windows 10"}
+  }
+]
