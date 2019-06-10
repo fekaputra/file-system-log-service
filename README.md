@@ -13,6 +13,12 @@
 
 
 - **Start Logstash**
+
+   - Download Logstash 6.3.0 from https://www.elastic.co/downloads/logstash
+   - add .config files from '/logstash-files'
+   - define pipelines.yml - example can be found in '/logstash-files'
+   
+   to start logstash run:
     
         > cd logstash-6.3.0
         > sudo bin/logstash
