@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/sepses/vocab/event/fileAccess#"
+     xml:base="http://purl.org/sepses/vocab/event/fileAccess"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#eventID -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#eventID">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Int"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasAction">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasProgram -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasProgram">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasSourceFile -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasSourceFile">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#File"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasSourceHost -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasSourceHost">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Host"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasTargetFile -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasTargetFile">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#File"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasTargetHost -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasTargetHost">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Host"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasUser -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasUser">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#actionName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#actionName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#fileName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#fileName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hostName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hostName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#programName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#programName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#timestamp">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#userName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/event/fileAccess#userName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/event/fileAccess#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#Action -->
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/event/fileAccess#Action"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#File -->
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/event/fileAccess#File"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent -->
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#Host -->
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/event/fileAccess#Host"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#Program -->
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/event/fileAccess#Program"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#User -->
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/event/fileAccess#User"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Class -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Host -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Host"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Property -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Int -->
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Int"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#Action -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#Action">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#FileAccessEvent">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#Host -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#Host">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#Program -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#Program">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#User -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#User">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#eventID -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#eventID">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#fileName -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#fileName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasProgram -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasProgram">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasSourceFile -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasSourceFile">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasTargetFile -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasTargetFile">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hasUser -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hasUser">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#hostName -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#hostName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#programName -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#programName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/event/fileAccess#userName -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sepses/vocab/event/fileAccess#userName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
