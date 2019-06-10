@@ -1,5 +1,2 @@
 /target
 /tdb/*
-/TripleWave-fileSystemLog/*
-/TripleWave-processInfo/*
-/logstash-6.3.0
