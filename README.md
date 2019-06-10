@@ -1,4 +1,17 @@
 # FileSystem-LogParser
+
+**Preconditions**
+    
+   Create folder structure:
+       
+   - tdb/DB_Background
+   - tdb/DB_FileAccessEvent
+   - tdb/DB_LogEntry
+   - tdb/DB_ProcessInfo
+        
+---
+
+
 - **Start Logstash**
     
         > cd logstash-6.3.0
@@ -26,3 +39,8 @@
 
         mvn spring-boot:run
 
+
+- **Start Web UI**
+
+        > cd app
+        > npm start
