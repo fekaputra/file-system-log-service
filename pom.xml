@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sba</groupId>
+    <artifactId>sba</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <name>filesystem-log-csparql-client</name>
+    <description>Demo project for Spring Boot</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
+        <!-- JENA 3 dependencies -->
+        <dependency>
+              <groupId>org.apache.jena</groupId>
+              <artifactId>apache-jena-libs</artifactId>
+              <type>pom</type>
+              <version>3.6.0</version>
+          </dependency>
+          <dependency>
+              <groupId>org.apache.jena</groupId>
+              <artifactId>jena-sdb</artifactId>
+              <version>3.6.0</version>
+          </dependency>
+
+<!-- jena dep used by csparql-->
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-core</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-arq</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-tdb</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <!--C-SPARQL-->
+        <dependency>
+            <groupId>eu.larkc.csparql</groupId>
+            <artifactId>csparql-core</artifactId>
+            <version>0.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>it.polimi.deib</groupId>
+            <artifactId>rsp-services-api</artifactId>
+            <version>0.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-WebSocket</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.jsonld-java</groupId>
+            <artifactId>jsonld-java</artifactId>
+            <version>0.12.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.jena</groupId>
+                <artifactId>jena-maven-tools</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <includes>
+                       <!-- <include>src/main/resources/vocabs/file-system-log-schema.rdfs</include>-->
+                       <!-- <include>src/main/resources/vocabs/file_access_events.rdfs</include>-->
+                       <!--<include>src/main/resources/vocabs/process-info.rdfs</include>-->
+                    </includes>
+                    <fileOptions>
+                        <source>
+                            <input>default</input>
+                            <package-name>ac.at.tuwien.logparser.vocab</package-name>
+                        </source>
+                        <source>
+                            <input>src/main/resources/vocabs/file-system-log-schema.rdfs</input>
+                            <ontology>true</ontology>
+                            <use-inf>true</use-inf>
+                        </source>
+                        <source>
+                            <input>src/main/resources/vocabs/file_access_events.rdfs</input>
+                            <ontology>true</ontology>
+                            <use-inf>true</use-inf>
+                        </source>
+                    </fileOptions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>schemagen</id>
+                        <goals>
+                            <goal>translate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+        <repository>
+            <id>stardog-public</id>
+            <url>http://maven.stardog.com</url>
+        </repository>
+        <repository>
+            <id>streamreasoning_repository</id>
+            <name>streamreasoning repository</name>
+            <url>http://streamreasoning.org/maven/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
